@@ -28,7 +28,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="height: auto">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <button type="button" class="navbar-toggle" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
             <a class="navbar-brand page-scroll" href="#">
@@ -38,11 +38,11 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse" >
-            <ul class="nav navbar-nav">
+            <!--<ul class="nav navbar-nav">-->
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden">
-                    <a href="#page-top"></a>
-                </li>
+                <!--<li class="hidden">-->
+                    <!--<a href="#page-top"></a>-->
+                <!--</li>-->
                 <!--<li><a href="./result.html" style="font-size: 14pt;">Board</a></li>-->
                 <!--<li>-->
                     <!--<a class="page-scroll" href="#news" style="font-size: 14pt;">Home</a>-->
@@ -55,7 +55,9 @@
                 <!--<li><a href="publication.html">Publication</a></li>-->
                 <!--<li><a href="MISC.html">MISC</a></li>-->
                 <!--<li><a href="old/struct.html">Old Version</a></li>-->
-            </ul>
+            <!--</ul>-->
+            <a href="http://2019.ieeeicip.org/"><img src="img/banner-index.png" style="position: relative; margin-right: 10%; margin-top: 10px" width="100" class="pull-right"></a>
+
         </div>
     </div>
 </nav>
@@ -106,51 +108,6 @@
         </div>
     </div>
 </div>
-<div class="hidden">
-    <div class="container"> <!-- Container -->
-        <div class="col-lg-10 col-lg-offset-1">
-            <div class="section-title text-center center">
-               <table  class="welcome-message text-center solid_form" style="font-size: 14pt">
-                   <tr class="solid_form ">
-                       <td>Team Name</td><td>School / Organization</td><td>Team Members</td>
-                       <td>mAP::IOU=0.5</td>
-                       <td>mAP::IOU=0.7</td><td>mAP::IOU=0.95</td>
-                   </tr>
-                   <tr class="solid_form">
-                       <td>HRI</td><td>Hikvision</td><td>Chao Li, Qiaoyong Zhong, Liang Ma, Di Xie</td>
-                       <td>0.95004</td>
-                       <td>0.94754</td><td>0.91242</td>
-                   </tr>
-                   <tr class="solid_form">
-                       <td>DIGCASIA</td><td>Institute of Automation, Chinese Academy of Sciences</td><td>Hongsong Wang, Yuqi Zhang, Liang Wang</td>
-                       <td>0.90291</td>
-                       <td>0.90022</td><td>0.86009</td>
-                   </tr>
-                   <tr class="solid_form">
-                       <td>THU_IVG</td><td>Tsinghua University</td><td> Yansong Tang, Lei Chen, Ruogu Lin, Zi'an Wang, Jiwen Lu, Jie Zhou</td>
-                       <td>0.70960</td>
-                       <td>0.70459</td><td>0.65153</td>
-                   </tr>
-                   <tr class="solid_form">
-                       <td>NJUST_IMAG</td><td>Nanjing University of Science and Technology</td><td>Jinhui Tang, Yan Song, Zechao Li, Xiangbo Shu, Chengcheng Ning, Lingling Fa, Minglei Yang, Li Sun</td>
-                       <td>0.70818</td>
-                       <td>0.69008</td><td>0.58939</td>
-                   </tr>
-                   <tr class="solid_form">
-                       <td>Inteam</td><td>Northwestern Polytechnical University</td><td>Bo Li, Huahui Chen, Xuelian Cheng, Yucheng Chen, Yi Li, Yuchao Dai, Mingyi He.</td>
-                       <td>0.58533</td>
-                       <td>0.55953</td><td>0.48247</td>
-                   </tr>
-                   <tr class="solid_form">
-                       <td>404 NOT FOUND</td><td>Zhejiang University</td><td>Songyang Zhang, Yimeng Li, Ze Li, Yunan Ye, Jun Xiao</td>
-                       <td>0.35834</td>
-                       <td>0.35112</td><td>0.32129</td>
-                   </tr>
-               </table>
-            </div>
-        </div>
-    </div>
-</div>
 <div style="background-color: #F5F5F5">
     <div class="container" > <!-- Container -->
         <div class="col-lg-10 col-lg-offset-1">
@@ -184,12 +141,12 @@
                     validation, and test data.
                 </p>
                 <p class="welcome-message text-left" style="font-size: 14pt">
-                    Hazy dataset: We provide 4, 675 real-world hazy images collected from traffic surveillance scene,
+                    <strong>Hazy dataset:</strong> We provide 4, 675 real-world hazy images collected from traffic surveillance scene,
                     all of which are labeled with object bounding boxes and categories (car, bus, bicycle, motorcycle,
                     and pedestrian), for validation and testing purposes.
                 </p>
                 <p class="welcome-message text-left" style="font-size: 14pt">
-                    Rainy dataset: We provide 4,000 real-world rainy images captured at various scenes, including rain streak,
+                    <strong>Rainy dataset:</strong> We provide 4,000 real-world rainy images captured at various scenes, including rain streak,
                     raindrop, and rain and mist images, all of which are labeled with object bounding boxes and categories
                     (bike, car, human, truck, motorbike etc.)
                 </p>
@@ -247,13 +204,19 @@
                 <hr>
                 <ul class="welcome-message text-left" style="font-size: 14pt">
                     <li class="welcome-message text-left">
-                        ⦁ <strong>May. 27&nbsp;&nbsp;</strong>, Challenge paper submission due.
+                        ⦁ <strong>May 27</strong>, Test image submission deadline.
                     </li>
                     <li class="welcome-message text-left">
-                        ⦁ <strong>July. 1&nbsp;</strong>, Notification of paper acceptance.
+                        ⦁ <strong>May 27</strong>, Challenge paper submission due.
                     </li>
                     <li class="welcome-message text-left">
-                        ⦁ <strong>July. 15</strong>, Deadline of camera-ready paper.
+                        ⦁ <strong>Jul. 1 </strong>, Evaluation results announcement:.
+                    </li>
+                    <li class="welcome-message text-left">
+                        ⦁ <strong>Jul. 1 </strong>, Notification of paper acceptance.
+                    </li>
+                    <li class="welcome-message text-left">
+                        ⦁ <strong>Jul. 15</strong>, Deadline of camera-ready paper.
                     </li>
 
                 </ul>
