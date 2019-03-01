@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICIP2019 Challenge</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+    <!-- Slider
+        ================================================== -->
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+        ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/workshop.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="color: #000">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="height: auto">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="../struct.html">
+                <i class="fa fa-terminal" ></i> ICIP Challenge
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse" >
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <!--<li><a href="./result.html" style="font-size: 14pt;">Board</a></li>-->
+                <li>
+                    <a class="page-scroll" href="#news" style="font-size: 14pt;">Home</a>
+                </li>
+                <li><a class="page-scroll" href="#days" style="font-size: 14pt;">Important Dates</a></li>
+                <!--<li><a href="http://www.icme2017.org/workshops/" style="font-size: 14pt;">All Workshops</a></li>-->
+                <!--<li><a href="http://www.icme2017.org/" style="font-size: 14pt;">About ICME2017</a></li>-->
+                <!--<li><a href="people.html">People</a></li>-->
+                <!--<li><a href="talks.html">Talks</a></li>-->
+                <!--<li><a href="publication.html">Publication</a></li>-->
+                <!--<li><a href="MISC.html">MISC</a></li>-->
+                <!--<li><a href="old/struct.html">Old Version</a></li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="modified-header intro" style="background-image: url(img/action_challenge.jpg); padding-top: 60px">
+
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1>IEEE ICIP 2019 <br><span class="brand-heading">Grand Challenge</span></h1>
+                    <p class="intro-text">Realistic Single Image Recovering in Adverse Weather
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="news-session" id="news" >
+    <div class="container">
+        <div class="section-title text-center center" style="">
+            <h2>Recent News</h2>
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <table class="hidden" id="sample">
+                    <tr class="news-item" style="background-color: #FFFFFF">
+                        <td class="news-text"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></td>
+                        <td class="news-text" width="150px">
+                            <strong></strong>
+                        </td>
+                        <td class="news-text" style="font-size: 14pt">
+                        </td>
+                    </tr>
+                </table>
+                <table class="news-container">
+
+
+                </table>
+                <div class="hidden">
+                    <div class="dev-item">
+                        <span>Apr.  14, 2017</span>
+                        <span><strong><a href="./result.html">Challenge result</a> released</strong></span>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <div class="dev-item">
+                        <span>Apr.  1, 2017</span>
+                        <span><strong>Testing data released</strong>. Please check email notifications.</span>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <div class="dev-item">
+                        <span>Mar.  5, 2017</span>
+                        <span><strong>Training dataset released</strong>. Please check email notifications.</span>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <div class="dev-item">
+                        <span>Feb. 21, 2017</span>
+                        <span>Schedule modification. Please see <a class="page-scroll" href="#days">Important Days</a></span>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <div class="dev-item">
+                        <span>Jan. 4, 2017</span>
+                        <span><a class="page-scroll" href="#registration">Registration</a> begins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hidden">
+    <div class="container"> <!-- Container -->
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+               <table  class="welcome-message text-center solid_form" style="font-size: 14pt">
+                   <tr class="solid_form ">
+                       <td>Team Name</td><td>School / Organization</td><td>Team Members</td>
+                       <td>mAP::IOU=0.5</td>
+                       <td>mAP::IOU=0.7</td><td>mAP::IOU=0.95</td>
+                   </tr>
+                   <tr class="solid_form">
+                       <td>HRI</td><td>Hikvision</td><td>Chao Li, Qiaoyong Zhong, Liang Ma, Di Xie</td>
+                       <td>0.95004</td>
+                       <td>0.94754</td><td>0.91242</td>
+                   </tr>
+                   <tr class="solid_form">
+                       <td>DIGCASIA</td><td>Institute of Automation, Chinese Academy of Sciences</td><td>Hongsong Wang, Yuqi Zhang, Liang Wang</td>
+                       <td>0.90291</td>
+                       <td>0.90022</td><td>0.86009</td>
+                   </tr>
+                   <tr class="solid_form">
+                       <td>THU_IVG</td><td>Tsinghua University</td><td> Yansong Tang, Lei Chen, Ruogu Lin, Zi'an Wang, Jiwen Lu, Jie Zhou</td>
+                       <td>0.70960</td>
+                       <td>0.70459</td><td>0.65153</td>
+                   </tr>
+                   <tr class="solid_form">
+                       <td>NJUST_IMAG</td><td>Nanjing University of Science and Technology</td><td>Jinhui Tang, Yan Song, Zechao Li, Xiangbo Shu, Chengcheng Ning, Lingling Fa, Minglei Yang, Li Sun</td>
+                       <td>0.70818</td>
+                       <td>0.69008</td><td>0.58939</td>
+                   </tr>
+                   <tr class="solid_form">
+                       <td>Inteam</td><td>Northwestern Polytechnical University</td><td>Bo Li, Huahui Chen, Xuelian Cheng, Yucheng Chen, Yi Li, Yuchao Dai, Mingyi He.</td>
+                       <td>0.58533</td>
+                       <td>0.55953</td><td>0.48247</td>
+                   </tr>
+                   <tr class="solid_form">
+                       <td>404 NOT FOUND</td><td>Zhejiang University</td><td>Songyang Zhang, Yimeng Li, Ze Li, Yunan Ye, Jun Xiao</td>
+                       <td>0.35834</td>
+                       <td>0.35112</td><td>0.32129</td>
+                   </tr>
+               </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #F5F5F5">
+    <div class="container" > <!-- Container -->
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>Descriptions</h2>
+                <hr>
+                <div class="welcome-message text-left" style="font-size: 14pt">
+                <p>
+                    Outdoor scenes are often affected by fog, haze, rain, and smog. Poor visibility in the atmosphere is due
+                    to suspended particles.
+                </p>
+                <p>
+                    This challenge is meant to consolidate research efforts about single image recovering in adverse weather,
+                    especially hazy and rainy days. The challenge consists of two tracks: Hazy Image Recovering (HIR) and Rainy Image
+                    Recovering (RIR). In both tracks the researchers are required to recover sharp images from give
+                    degraded (hazy and rainy) inputs.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="container"> <!-- Container -->
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>Datasets</h2>
+                <hr>
+                <p class="welcome-message text-left" style="font-size: 14pt">
+                    The dataset consists of two parts: rainy dataset and hazy dataset. Both these two datasets including training,
+                    validation, and test data.
+                </p>
+                <p class="welcome-message text-left" style="font-size: 14pt">
+                    Hazy dataset: We provide 4, 675 real-world hazy images collected from traffic surveillance scene,
+                    all of which are labeled with object bounding boxes and categories (car, bus, bicycle, motorcycle,
+                    and pedestrian), for validation and testing purposes.
+                </p>
+                <p class="welcome-message text-left" style="font-size: 14pt">
+                    Rainy dataset: We provide 4,000 real-world rainy images captured at various scenes, including rain streak,
+                    raindrop, and rain and mist images, all of which are labeled with object bounding boxes and categories
+                    (bike, car, human, truck, motorbike etc.)
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top: -30px; padding-bottom: 60px"  id="registration"></div>
+<div id="days" style="background-color: #F5F5F5; padding-bottom: 30px;" class="hidden">
+    <div class="container">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>
+                    Registration
+                </h2>
+                <hr>
+                <p class="welcome-message text-left" style="font-size: 14pt">
+                    Each team will be asked to register prior to the submission period. Registration is now opened, to
+                    register please submit the Registration Form to <strong>pkustruct@gmail.com</strong>.
+                </p>
+
+            </div>
+        </div>
+        <div class="col-lg-6 col-lg-offset-3">
+            <div>
+                <table class="solid_form">
+                    <tr>
+                        <td class="solid_form">Team Name</td>
+                        <td class="solid_form">&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="solid_form">School/Organization Name</td>
+                        <td class="solid_form">&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="solid_form">Team Members' Name</td>
+                        <td class="solid_form">&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="solid_form">Email Address</td>
+                        <td class="solid_form">&nbsp;&nbsp;&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #F5F5F5">
+    <div class="container">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>
+                    Important Dates
+                </h2>
+                <hr>
+                <ul class="welcome-message text-left" style="font-size: 14pt">
+                    <li class="welcome-message text-left">
+                        ⦁ <strong>May. 27&nbsp;&nbsp;</strong>, Challenge paper submission due.
+                    </li>
+                    <li class="welcome-message text-left">
+                        ⦁ <strong>July. 1&nbsp;</strong>, Notification of paper acceptance.
+                    </li>
+                    <li class="welcome-message text-left">
+                        ⦁ <strong>July. 15</strong>, Deadline of camera-ready paper.
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  style="background-color: #F5F5F5" class="hidden">
+    <div class="container">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>Topics Of Interest</h2>
+                <hr>
+                <p class="welcome-message text-left">
+                    The challenge focuses on analysis of daily indoor activities from skeleton data captured by 3D
+                    cameras for two different tasks.
+                </p>
+                <ul>
+                    <li class="welcome-message text-left">
+                        ⦁ Segmented Action Recognition Challenge:<br>
+                        &nbsp; Given a well-segmented
+                        skeleton video clip, predict the label of the activity present in the video clip.
+                    </li>
+                    <li class="welcome-message text-left" style="margin-top: 10px">
+                        ⦁ Untrimmed Action Detection Challenge:<br>
+                        &nbsp; Given a long skeleton video,
+                        predict the action intervals with labels of the activities<!-- present in the video-->.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: #FFFFFF" class="hidden">
+    <div class="container">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>
+                    Significance
+                </h2>
+                <hr>
+                <p class="welcome-message text-left" style="font-size: 14pt">
+                    Activity analysis is an important area in computer vision and strongly relevant to multimedia.
+                    Different from other topics in the main conference, this workshop focuses on 3D human activity
+                    analysis which has been shown to have a potentially large impact in broad practical applications
+                    like visual surveillance, human-robot interaction, elderly assistance systems, etc.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="background-color: #FFFFFF">
+    <div class="container">
+        <div class="section-title text-center center">
+            <h2>
+                Organizers
+            </h2>
+            <hr>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <img src="img/Liujiaying_square.jpeg" width="180px" style="border-radius: 50%; border: solid thick #F4D03F" class="img-rounded">
+                </div>
+                <div class="col-lg-7" style="font-size: x-large">
+                    <strong>Dr. Jiaying Liu<br></strong>
+                    Associate Professor, Institute of Computer Science and Technology<br>
+                    Peking University, Beijing, P.R. China<br>
+                    Email: liujiaying@pku.edu.cn<br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <img src="img/wren.png" width="180px" style="border-radius: 50%; border: solid thick #F4D03F" class="img-rounded">
+                </div>
+                <div class="col-lg-7" style="font-size: x-large">
+                    <strong>Dr. Wenqi Ren<br></strong>
+                    Assistant Professor, Institute of Information Engineering<br>
+                    Chinese Academy of Sciences, Beijing, P.R. China<br>
+                    Email: renwenqi@iie.ac.cn<br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-lg-offset-1">
+                    <img src="img/atlas.jpg" width="180px" style="border-radius: 50%; border: solid thick #F4D03F" class="img-rounded">
+                </div>
+                <div class="col-lg-7" style="font-size: x-large">
+                    <strong>Dr. Zhangyang Wang<br></strong>
+                    Assistant Professor, Department of Computer Science & Engineering<br>
+                    Texas A&M University, US<br>
+                    Email: atlaswang@tamu.edu<br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: #F5F5F5" class="">
+    <div class="container">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="section-title text-center center">
+                <h2>
+                    Acknowledgment
+                </h2>
+                <hr>
+                <p class="welcome-message text-center" style="font-size: 14pt">
+                    This workshop is funded by Microsoft Research Asia, project ID FY17-RES-THEME-013.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio Section -->
+
+
+<footer class="page-footer" style="background-color: rgb(34,34,34); margin: 0 !important; color: #F5F5F5">
+    <div class="container">
+        <div class="text-center fnav">
+            <p>Copyright © 2013 STRUCT.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/SmoothScroll.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<!-- Javascripts
+    ================================================== -->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
